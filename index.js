@@ -30,7 +30,6 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
   e.preventDefault();
 
   const email = document.getElementById("emailInput").value;
-  console.log("sdsadsadsas", email);
   emailjs
     .send("service_pywmzcx", "template_gaqn6ng", {
       user_email: email,
