@@ -518,6 +518,67 @@ li {
   text-align: justify;
 }
 
+.footer-block {
+  text-align: center;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.footer-block .contact-form {
+  width: 300px;
+}
+.contact-form img {
+  width: 40px;
+  height: 40px;
+}
+.contact-form p {
+  text-align: left;
+}
+.contact-info {
+  text-align: left;
+}
+.contact-info h4 {
+  color: #ffd900;
+}
+.copy-right {
+  font-size: 14px;
+  color: #ffffff;
+  width: 100%;
+  background-color: #ffd900;
+}
+.copy-right p {
+  margin: 0;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-commit {
+  height: 100%;
+  padding: 10px;
+  background-color: #e0e0e0;
+  border-radius: 8px;
+}
+#contactForm input[type="email"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#contactForm button {
+  width: 50%;
+  padding: 8px;
+  background-color: #1aff00;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 @media (max-width: 600px) {
   .navbar {
     padding: 0 12px;

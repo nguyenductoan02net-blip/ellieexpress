@@ -25,3 +25,21 @@ setInterval(() => {
   // Gán active mới
   cards[activeIndex].classList.add("active");
 }, 5000);
+
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const email = document.getElementById("emailInput").value;
+  console.log("sdsadsadsas", email);
+  emailjs
+    .send("service_pywmzcx", "template_gaqn6ng", {
+      user_email: email,
+    })
+    .then(() => {
+      alert("Gửi email thành công!");
+    })
+    .catch((err) => {
+      alert("Lỗi khi gửi email");
+      console.log(err);
+    });
+});
